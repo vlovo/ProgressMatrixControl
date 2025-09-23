@@ -162,7 +162,8 @@ namespace ProgressMatrixLibrary
             mTokenSource = new CancellationTokenSource();
             CancellationToken cancelToken = mTokenSource.Token;
             mStop = false;
-            mCellColor = Color.FromArgb(0, 144, 223);
+            //mCellColor = Color.FromArgb(0, 144, 223);
+            mCellColor = Color.Orange;
 
             State = ProgressState.Animate;
             mProgressTask = Task.Run(() =>
